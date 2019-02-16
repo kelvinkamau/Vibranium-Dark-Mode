@@ -55,7 +55,7 @@ $(document).ready(function(){
     if ($(e.target).is('a')) {
       $(this).collapse('hide');
       $('.navbar-toggler').toggleClass('menu-is-expanded');
-      // $('.Menu-Icon--Circle').css('transform', 'translateX(-50%) translateY(-50%) scale(1)');
+      $('.Menu-Icon--Circle').css('transform', 'translateX(-50%) translateY(-50%) scale(1)');
     }
   });
 
