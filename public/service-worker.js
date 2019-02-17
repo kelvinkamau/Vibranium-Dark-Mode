@@ -29,7 +29,7 @@ self.addEventListener('fetch', function (event) {
                             '/css/styles.css',
                             '/css/swiper.min.css',
                             '/images/assets/events/fba.png',
-                            '/images/assets/events/fbw.png',
+                            '/images/assets/events/cloud.gif',
                             '/images/assets/events/rpj.png',
                             '/images/assets/diversity.png',
                             '/images/assets/logo2.png',
