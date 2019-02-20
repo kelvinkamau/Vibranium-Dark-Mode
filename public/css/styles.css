@@ -30,6 +30,10 @@ second-letter {
   color: #FBBC12;
   font-weight: 400;
 }
+.mail:hover{
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 third-letter {
   color: #E1382B;
