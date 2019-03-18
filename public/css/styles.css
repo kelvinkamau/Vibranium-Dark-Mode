@@ -801,10 +801,17 @@ p {
   min-height: 550px;
 }
 
-.hero-content {
-  margin-bottom: 50px;
+
+@media (min-width: 768px) {
+    .hero-content {
+        margin-top: 150px;
+        margin-bottom: 80px;
+    }
 }
 
+.hero-content {
+
+}
 .hero-title__group {
   margin-bottom: 30px;
 }
@@ -1983,7 +1990,7 @@ hr{
 
 #scroll:hover {
   background-color: #fff;
-  color: #3BC1FD;
+    color: #0A192F;
   -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
   opacity: 1;
@@ -1993,7 +2000,6 @@ hr{
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -2027,7 +2033,6 @@ hr{
   padding: 10px 22px;
   font-size: 15px;
   border-radius: 20px;
-
 }
 
 .button:hover, .hero-button:hover, .event-btn:hover {
@@ -2095,4 +2100,12 @@ hr{
 .african2{
     background: url(africa2.svg) no-repeat;
     padding: 20px 0;
+}
+
+.sponsor {
+    margin-top: 130px
+}
+
+.sponsor p {
+    font-size: 12px;
 }
