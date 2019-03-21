@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Google Analytics -->
     <script>
@@ -87,10 +92,10 @@
             <div class="col-12 col-sm-6">
                 <div class="hero-content">
                     <div class="hero-title__group">
-                        <div class="hero-title">
+                        <div class="hero-title wow bounceInLeft">
                             <h2 class="zuri">Developer Student Club<br> Kisii University.</h2>
                         </div>
-                        <div class="Hero--Subtitle">
+                        <div class="Hero--Subtitle wow bounceInLeft">
                             <p class="lead">Developer Student Clubs is a
                                 <first-letter>G</first-letter><third-letter>o</third-letter><second-letter>o</second-letter><first-letter>g</first-letter><forth-letter>l</forth-letter><third-letter>e</third-letter>
                                     Developers program for university students to learn<second-letter> mobile </second-letter> and
@@ -99,21 +104,23 @@
                             </p>
                         </div>
                     </div>
-                    <a href="http://meetu.ps/c/3q6jR/zjdKV/f" class="hero-button" target="_blank" rel="noopener"><i class="fab fa-meetup"></i> &nbsp; Become a member</a>
+                    <a class="hero-button wow zoomIn" href="http://meetu.ps/c/3q6jR/zjdKV/f" rel="noopener"
+                       target="_blank"><i class="fab fa-meetup"></i> &nbsp; Become a member</a>
                     <div class="sponsor">
                         <table>
                             <tr>
                                 <td colspan="3">Event partners</td>
                             </tr>
                             <tr>
-                                <td style="padding-right: 15px"><img height="20"
+                                <td style="padding-right: 15px"><img alt="" height="20"
                                                                      src="https://cdn.svgporn.com/logos/google.svg"/>
                                 </td>
-                                <td style="padding-right: 15px"><img height="20"
+                                <td style="padding-right: 15px"><img alt="" height="20"
                                                                      src="https://cdn.svgporn.com/logos/microsoft.svg"/>
                                 </td>
-                                <td style="padding-right: 15px"><img height="20"
-                                                                     src="https://cdn.svgporn.com/logos/ghost.svg"></td>
+                                <td style="padding-right: 15px"><img alt="" height="20"
+                                                                     src="https://cdn.svgporn.com/logos/github.svg">
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -121,7 +128,7 @@
 
             </div>
             <div class="col-12 col-sm-5 ml-pic">
-                <div class="hero-figure">
+                <div class="hero-figure wow bounceInRight">
                     <img data-src="images/assets/diversity.png" class="img-fluid w-100"
                          alt="Illustration of diversity in a developer community">
                 </div>
@@ -136,7 +143,7 @@
 
         <div class="row">
             <div class="col-md-4 col-12">
-                <div class="feature-card">
+                <div class="feature-card wow fadeInUpBig">
                     <div class="feature-card__body">
                         <i class="fas fa-rocket ghost-blue"></i>
                         <h4 class="feature-title">Concept of DSC</h4>
@@ -146,7 +153,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="feature-card">
+                <div class="feature-card wow">
                     <div class="feature-card__body">
                         <i class="fas fa-lightbulb ghost-green"></i>
                         <h4 class="feature-title">Why DSC?</h4>
@@ -158,7 +165,7 @@
             </div>
             <div class="col-md-4 col-12">
                 <div class="feature-card m-0">
-                    <div class="feature-card__body">
+                    <div class="feature-card__body wow">
                         <i class="fas fa-users ghost-red"></i>
                         <h4 class="feature-title">Target audience</h4>
                         <p>DSC activities are targeted at University students and any others
@@ -981,7 +988,7 @@
         iframeObserver.observe(img);
     });
 
-    if ('serviceWorker' in navigator) {
+    /*if ('serviceWorker' in navigator) {
            window.addEventListener('load', function () {
                    navigator.serviceWorker.register('service-worker.js')
                        .then(function () {
@@ -989,7 +996,7 @@
                        });
                }
            );
-    }
+    }*/
 </script>
 <script src="js/vendors/jquery.min.js"></script>
 <script src="js/vendors/bootstrap.bundle.min.js"></script>
