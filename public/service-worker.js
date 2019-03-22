@@ -30,7 +30,7 @@ self.addEventListener('fetch', function (event) {
                             '/css/swiper.min.css',
                             '/images/assets/events/fba.png',
                             '/images/assets/events/cloud.gif',
-                            '/images/assets/events/rpj.png',
+                            '/images/assets/events/flutter.png',
                             '/images/assets/diversity.png',
                             '/images/assets/logo2.png',
                             '/images/assets/team/avatar.png',
