@@ -1308,9 +1308,9 @@ hr{
   display: block;
   margin: 0 0 0;
   padding-left: 20px;
-  list-style-type: none;
+  list-style-type: square;
   font-size: 15px;
-  text-indent: -1em;
+
 }
 
 .footer-widget a {
@@ -2113,3 +2113,15 @@ hr{
 .sponsor p {
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+    .sponsor {
+        margin-top: 70px;
+        width: 100%;
+        margin-left: 15%;
+
+    }
+}
+
+
+
