@@ -98,8 +98,11 @@ p {
   .zuri{
     text-align: left;
     line-height: 1.5;
-      font-family: 'Google Sans Medium', sans-serif;
   }
+}
+
+.zuri {
+    font-family: 'Google Sans Medium', sans-serif;
 }
 
 .text-warning {
