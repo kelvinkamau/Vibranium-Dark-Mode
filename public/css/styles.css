@@ -2114,3 +2114,14 @@ hr{
     font-size: 12px;
 }
 
+@media (max-width: 768px) {
+    .sponsor {
+        margin-top: 70px;
+        width: 100%;
+        margin-left: 15%;
+
+    }
+}
+
+
+
