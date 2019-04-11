@@ -154,7 +154,7 @@
 
         <div class="row">
             <div class="col-md-4 col-12">
-                <div class="feature-card wow fadeInUpBig">
+                <div class="feature-card wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-rocket ghost-blue"></i>
                         <h4 class="feature-title">Concept of DSC</h4>
@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="feature-card wow fadeInUpBig">
+                <div class="feature-card wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-lightbulb ghost-green"></i>
                         <h4 class="feature-title">Why DSC?</h4>
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="feature-card m-0 wow fadeInUpBig">
+                <div class="feature-card m-0 wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-users ghost-red"></i>
                         <h4 class="feature-title">Target audience</h4>
@@ -387,12 +387,24 @@
                             <img alt="Event one poster" class="card-img-top" data-src="images/assets/events/cloud.gif">
                             <div class="card-body">
                                 <p class="tagging intermediate float-right">Intermediate</p>
-                                <h5 class="card-title">GDG Cloud Study Jam</h5>
-                                <p class="card-text">
-                                    <strong>DATE :</strong> 30<sup>th</sup> March 2019<br>
-                                    <strong>VENUE :</strong> LH 20, Main Campus<br>
-                                    <strong>TIME :</strong> 0900hrs - 1200hrs
-                                </p>
+                                <h5 class="card-title">Cloud Study Jam</h5>
+
+                                <table>
+                                    <tr>
+                                        <td width="15%" class="text-blue"><i class="far fa-calendar-alt"></i></td>
+                                        <td>20<sup>th</sup> April 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-red"><i class="fas fa-map-marker-alt"></i></td>
+                                        <td>LH 20, Main Campus</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-green"><i class="far fa-clock"></i></td>
+                                        <td>0900hrs - 1200hrs</td>
+                                    </tr>
+                                </table>
+
                                 <a class="button float-right" href="https://www.meetup.com/GDG-Kisii/events/258696811/">Attend</a>
                             </div>
                         </div>
@@ -404,11 +416,22 @@
                             <div class="card-body">
                                 <p class="tagging beginner float-right">Beginner</p>
                                 <h5 class="card-title">Kotlin for Beginners</h5>
-                                <p class="card-text">
-                                    <strong>DATE :</strong> 6<sup>th</sup> April 2019<br>
-                                    <strong>VENUE :</strong> LH 20, Main Campus<br>
-                                    <strong>TIME :</strong> 0900hrs - 1300hrs
-                                </p>
+
+                                <table>
+                                    <tr>
+                                        <td width="15%" class="text-blue"><i class="far fa-calendar-alt"></i></td>
+                                        <td>6<sup>th</sup> May 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-red"><i class="fas fa-map-marker-alt"></i></td>
+                                        <td>LH 20, Main Campus</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-green"><i class="far fa-clock"></i></td>
+                                        <td>0900hrs - 1400hrs</td>
+                                    </tr>
+                                </table>
+
                                 <a href="https://www.meetup.com/GDG-Kisii/events/258288819/" class="button float-right">Attend</a>
                             </div>
                         </div>
@@ -421,11 +444,23 @@
                             <div class="card-body">
                                 <p class="tagging expert float-right">Expert</p>
                                 <h5 class="card-title">Let's Flutter This Week</h5>
-                                <p class="card-text">
-                                    <strong>DATE :</strong> 22<sup>nd</sup> - 27<sup>th</sup> April 2019<br>
-                                    <strong>VENUE :</strong> LH 20, Main Campus<br>
-                                    <strong>TIME :</strong> 1800hrs - 1930hrs
-                                </p>
+
+                                <table>
+                                    <tr>
+                                        <td width="15%" class="text-blue"><i class="far fa-calendar-alt"></i></td>
+                                        <td>22<sup>nd</sup> May 2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-red"><i class="fas fa-map-marker-alt"></i></td>
+                                        <td>LH 20, Main Campus</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="text-green"><i class="far fa-clock"></i></td>
+                                        <td>1800hrs - 1930hrs</td>
+                                    </tr>
+                                </table>
+
                                 <a href="https://www.meetup.com/GDG-Kisii/events/258212444/" class="button float-right">Attend</a>
                             </div>
                         </div>
@@ -1058,6 +1093,7 @@
     if ('serviceWorker' in navigator) {
                window.addEventListener('load', function () {
                        navigator.serviceWorker.register('service-worker.js')
+                           .then(function () {
                            .then(function () {
                                console.log("Service Worker Registered,");
                            });
