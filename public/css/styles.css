@@ -1653,6 +1653,7 @@ hr{
 
 .text-blue {
   color: #007bff  ;
+  opacity: 0.7;
 }
 
 .text-indigo {
@@ -1665,6 +1666,7 @@ hr{
 
 .text-red {
   color: #dc3545  ;
+  opacity: 0.7;
 }
 
 .text-orange {
@@ -1677,6 +1679,7 @@ hr{
 
 .text-green {
   color: #28a745  ;
+  opacity: 0.7;
 }
 
 .text-cyan {
