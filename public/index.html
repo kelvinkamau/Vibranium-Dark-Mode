@@ -154,7 +154,7 @@
 
         <div class="row">
             <div class="col-md-4 col-12">
-                <div class="feature-card wow fadeInUpBig">
+                <div class="feature-card wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-rocket ghost-blue"></i>
                         <h4 class="feature-title">Concept of DSC</h4>
@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="feature-card wow fadeInUpBig">
+                <div class="feature-card wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-lightbulb ghost-green"></i>
                         <h4 class="feature-title">Why DSC?</h4>
@@ -176,7 +176,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-12">
-                <div class="feature-card m-0 wow fadeInUpBig">
+                <div class="feature-card m-0 wow fadeInUp">
                     <div class="feature-card__body">
                         <i class="fas fa-users ghost-red"></i>
                         <h4 class="feature-title">Target audience</h4>
@@ -1093,6 +1093,7 @@
     if ('serviceWorker' in navigator) {
                window.addEventListener('load', function () {
                        navigator.serviceWorker.register('service-worker.js')
+                           .then(function () {
                            .then(function () {
                                console.log("Service Worker Registered,");
                            });
