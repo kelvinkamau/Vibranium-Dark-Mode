@@ -1090,7 +1090,7 @@
     document.querySelectorAll('iframe[data-urllink]').forEach(img => {
         iframeObserver.observe(img);
     });
-    /*if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator) {
                window.addEventListener('load', function () {
                        navigator.serviceWorker.register('service-worker.js')
                            .then(function () {
@@ -1098,7 +1098,7 @@
                            });
                    }
                );
-    }*/
+    }
 </script>
 <script src="js/vendors/jquery.min.js"></script>
 <script src="js/vendors/bootstrap.bundle.min.js"></script>
