@@ -1235,8 +1235,8 @@ hr{
 
 .card.hovercard .avatar {
   position: relative;
-  top: -50px;
-  margin-left: auto;
+  margin-top: 20px;
+  margin-left: 10px;
   margin-right: auto;
   margin-bottom: -50px;
 }
@@ -1249,8 +1249,19 @@ hr{
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.5);
+  
 }
+/*different border colors for team avators*/
+#bcol{
+  border: 2px solid rgba(47, 91, 231, 0.5);
+}
+#ycol{
+  border: 2px solid rgba(255, 255, 0, 0.5);
+}
+#rcol{
+  border: 2px solid rgba(255, 0, 0, 0.5);
+}
+/*end of border colors*/
 
 .card.hovercard .info {
   padding: 4px 8px 2px;
@@ -1259,13 +1270,15 @@ hr{
 }
 
 .card.hovercard .info .title h5 {
-  margin-bottom: 2px;
+  margin-top: -30px;
+  margin-left: 60px;
   font-size: 18px;
   line-height: 1;
   color: #D7D7D7;
 }
 .card.hovercard .info .title p {
   color: #D7D7D7;
+  margin-left: 100px;
 }
 
 .card.hovercard .info .title p {
@@ -1279,9 +1292,10 @@ hr{
   text-overflow: ellipsis;
 }
 .card.hovercard .bottom{
-  padding: 0 20px;
-  margin-bottom: 10px;
-  margin-left: auto;
+  padding: 0 5px;
+  margin-top: -25px;
+  margin-bottom: 30px;
+  margin-left: 120px;
   margin-right: auto;
 }
 .card.hovercard .bottom ul li a i{
