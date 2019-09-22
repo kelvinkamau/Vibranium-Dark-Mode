@@ -1219,6 +1219,49 @@ hr{
 /*end carousel styling*/
 
 /*team card stying*/
+/*@media (min-width: 800px) and (max-width: 1200px){
+
+ 
+
+  .card.hovercard .info .title h5 {
+    margin-top: -30px;
+    margin-left: 100px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1;
+      overflow: hidden;
+    color: #D7D7D7;
+  }
+  .card.hovercard .info .title p {
+    color: #D7D7D7;
+    margin-left: 100px;
+  }
+
+  .card.hovercard .info .title p {
+    border-radius: 25px;
+  }
+  .card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #D7D7D7;
+    text-overflow: ellipsis;
+  }
+  .card.hovercard .bottom{
+    padding: 0 5px;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    margin-left: 120px;
+    margin-right: auto;
+  }
+  .card.hovercard .bottom ul li a i{
+    color: #2F5BE7;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+
+}*/
 
 .card.hovercard{
   border: 0px;
@@ -2140,5 +2183,23 @@ hr{
     }
 }*/
 
+/*error page styling*/
+
+.error-block{
+  text-align: center;
+}
+.err-img{
+  border-radius: 10%;
+}
+
+.err{
+  padding: 20px;
+}
+.err-p{
+  font-size: 60px;
+}
+
+/*end 
+*/
 
 
