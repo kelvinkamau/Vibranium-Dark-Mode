@@ -126,7 +126,7 @@
 }
 
 .tensorsite-content__image-wrapper {
-    position: relative
+    position: relative;
 }
 
 .tensorsite-content__description {
@@ -164,6 +164,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-top: -30%;
     margin-bottom: 8px;
     position: relative
 }
@@ -234,6 +235,7 @@
 .tensorsite-card .tensorsite-content .tensorsite-content__title,
 .tensorsite-card .tensorsite-content ul {
     position: relative
+    
 }
 
 .tensorsite-card .tensorsite-content__image-wrapper {
@@ -378,78 +380,7 @@
     transition: transform 1s ease, -webkit-transform 1s ease
 }
 
-body {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    -webkit-font-smoothing: antialiased;
-    color: #fff
-}
 
-h1 {
-    font-family: Google Sans, sans-serif;
-    font-size: 34px;
-    font-weight: 500;
-    line-height: 44px
-}
-
-h2 {
-    font-size: 30px;
-    line-height: 40px
-}
-
-h2,
-h3 {
-    font-family: Google Sans, sans-serif;
-    font-weight: 700
-}
-
-h3 {
-    font-size: 24px;
-    line-height: 32px
-}
-
-h4 {
-    font-size: 20px;
-    font-weight: 500
-}
-
-h4,
-h5 {
-    font-family: Google Sans, sans-serif;
-    line-height: 26px
-}
-
-h5 {
-    font-size: 16px
-}
-
-h5,
-h6 {
-    font-weight: 700
-}
-
-h6 {
-    font-family: Google Sans, sans-serif;
-    font-size: 14px;
-    line-height: 22px
-}
-
-.hidden-text {
-    height: 1px;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    top: -10px;
-    width: 1px
-}
-
-img,
-video {
-    border: 0;
-    height: auto;
-    max-width: 100%
-}
 
 .wrapper {
     overflow: hidden
@@ -467,88 +398,44 @@ video {
         margin: 50px auto;
         padding: 0 20px
     }
+    
 }
 
 .tensorsite-container--narrow {
     max-width: 1160px
 }
 
+/*custom css for svg path positioning on cards*/
 .img-overlay-wrap {
   position: relative;
   display: inline-block; /* <= shrinks container to image size */
   transition: transform 150ms ease-in-out;
 }
 
-.img-overlay-wrap img { /* <= optional, for responsiveness */
-   display: block;
-   max-width: 100%;
-   height: auto;
+
+.tensorsite-content__clip-bg{
+    display: inline-block;
+    width: 100%;
+    vertical-align: left; 
+    overflow: hidden; 
 }
 
-.img-overlay-wrap svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -98px;
+.tensorsite-content__clip-shape{
+    display: inline-block;
+    position: absolute;
+    margin-top: -32%;
+    top: 0;
+    left: 0;
 }
 
-.img-overlay-wrap .tensorsite-content__subtitle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: -80px;
+.short-text { display: none; }
+
+@media (min-width: 768px) and (max-width: 1032px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+    .tensorsite-card{ height: 35rem; }
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 375px){
-
-    .img-overlay-wrap svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -80px;
-    }
-
-    .img-overlay-wrap .tensorsite-content__subtitle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -50px;
-    }
+@media (min-width: 768px) and (max-width: 800px) {
+    .tensorsite-card{ height: 40rem; }
 }
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 425px){
-
-    .img-overlay-wrap svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -95px;
-    }
-
-    .img-overlay-wrap .tensorsite-content__subtitle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -60px;
-    }
-}
-
-@media only screen and (min-device-width: 425px) and (max-device-width: 1024px){
-
-    .img-overlay-wrap svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -95px;
-    }
-
-    .img-overlay-wrap .tensorsite-content__subtitle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -80px;
-    }
-}
-
-
-
+/*end*/
